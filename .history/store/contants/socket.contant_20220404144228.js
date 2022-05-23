@@ -1,0 +1,8 @@
+export const LOAD_ROOMS = 'LOAD_ROOMS'
+
+export const SEND_MESSAGE = 'SEND_MESSAGE'
+export const LOAD_MESSAGES = 'LOAD_MESSAGES'
+export const JOIN_CHATROOM = 'JOIN_CHATROOM'
+export const DELETE_MESSAGE = 'DELETE_MESSAGE'
+export const CHAT_ERROR = 'CHAT_ERRO'
+export const CHAT_DISCONNECT = 'CHAT_DISCONNECT'

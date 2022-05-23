@@ -1,0 +1,32 @@
+import React from 'react'
+import { View, Text, StyleSheet, TouchableOpacity } from 'react-native'
+import ChatHeader from '../../components/ScreenChatSingle/ChatHeader'
+import ChatInput from '../../components/ScreenChatSingle/ChatInput'
+import MessagesList from '../../components/ScreenChatSingle/MessagesList'
+import { useNavigation } from '@react-navigation/native'
+
+// import ImagePickerScreen from '../components/ImagePickerScreen'
+
+const ChatScreen = () => {
+    const navigation = useNavigation()
+
+    return (
+        <View style={styles.container}>
+            <TouchableOpacity onPress={() => navigation.navigate('ListChat')}>
+                <ChatHeader />
+            </TouchableOpacity>
+
+            <MessagesList />
+            <ChatInput />
+        </View>
+    )
+}
+
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        backgroundColor: '#E5E5E5',
+    },
+})
+
+export default ChatScreen
